@@ -1,0 +1,163 @@
+body {
+    display: grid;
+    grid-template-areas: "header header header" "nav article ads" "footer footer footer";
+    grid-template-rows: 60px 1fr 60px;
+    grid-template-columns: 15% 1fr 15%;
+    grid-gap: 10px;
+    height: 100vh;
+    margin: 0;
+}
+
+header,
+footer,
+article,
+nav,
+div {
+    background: #ffffff;
+}
+
+#pageHeader {
+    grid-area: header;
+}
+
+#pageFooter {
+    grid-area: footer;
+    background-color: #eddfc5;
+}
+
+#mainArticle {
+    grid-area: article;
+}
+
+#mainNav {
+    grid-area: nav;
+}
+
+#siteAds {
+    grid-area: ads;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #eddfc5;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+li a {
+    color: #776f64;
+    display: block;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: #ffffff;
+}
+
+.headerContainer {
+    display: flex;
+    height: 100%;
+    background-color: #eddfc5;
+}
+
+.headerNav {
+    background-color: #eddfc5;
+}
+
+#logo {
+    padding: 20px;
+    background-color: #a8a594;
+    color: #ffffff;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navContainer {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+
+.place {
+    text-align: center;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.place a {
+    text-decoration: none;
+    align-items: center;
+    color: #263538;
+}
+
+.split {
+    width: 80%;
+    border: 1px solid #3a140082;
+}
+
+.place span {
+    margin-top: 2px;
+    color: #8c8c8c;
+}
+
+.footerContainer {
+    margin-top: 12px;
+    text-align: center;
+    background-color: #eddfc5;
+}
+
+.social_link {
+    text-decoration: none;
+    padding: 10px;
+}
+
+.social_link img {
+    width: 35px;
+    height: 35px;
+}
+
+.main_container {
+    display: grid;
+    grid-template-areas: "left right tmp" "left right tmp";
+    grid-template-columns: 2fr 4fr 0.25fr;
+    grid-gap: 10px;
+    height: 100%;
+}
+
+#mainLeft {
+    grid-area: left;
+    position: relative;
+}
+
+#mainRight {
+    grid-area: right;
+    margin-top: 40px;
+    padding: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#mainLeft img {
+    height: 500px;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+#mainRight div h1 a {
+    color: #858569;
+    text-decoration: none;
+}
+
+#mainRight div div a {
+    color: #858569;
+    text-decoration: none;
+}
