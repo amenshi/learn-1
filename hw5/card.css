@@ -1,0 +1,75 @@
+.card {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "image" "text";
+    border-radius: 12px;
+    background: white;
+    box-shadow: 5px 5px 12px #a0b18fb6;
+    text-align: center;
+}
+
+.card-image {
+    grid-area: image;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.card-text {
+    grid-area: text;
+    margin: 25px;
+}
+
+.card-text .date {
+    color: #858569;
+    font-size: 13px;
+}
+
+.card-text p {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.card-text h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 28px;
+}
+
+.card-text h3 {
+    margin-top: 0px;
+    font-size: 16px;
+}
+
+.card a {
+    color: #d2d6a8;
+    text-decoration: none;
+}
+
+.card a:hover {
+    color: #d2d6a8;
+}
+
+.card-image-1-url {
+    background: url("https://www.restoclub.ru/uploads/place_thumbnail_big/f/9/e/3/f9e3642e7c11909a9684e862bd711800.jpg");
+    background-size: cover;
+}
+
+.card-image-2-url {
+    background: url("https://www.sobaka.ru/images/image/01/18/97/75/_normal.jpeg    ");
+    background-size: cover;
+}
+
+.card-image-3-url {
+    background: url("https://www.sobaka.ru/images/image/01/18/97/78/_normal.jpeg");
+    background-size: cover;
+}
+
+.card-image-4-url {
+    background: url("https://www.sobaka.ru/images/image/01/18/97/83/_normal.jpeg");
+    background-size: cover;
+}
+
+.card-image-5-url {
+    background: url("https://www.restoclub.ru/uploads/place_thumbnail_big/7/c/d/1/7cd121c024923ff9778db136c1fef473.jpg");
+    background-size: cover;
+}
