@@ -1,0 +1,148 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.wrapper {
+    display: grid;
+    gap: 5px;
+    grid-template-areas: "header" "content" "footer";
+}
+
+ul {
+    list-style-type: none;
+}
+
+a,
+a:visited,
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+/* header */
+
+.main-image {
+    background: url("./assets/main-image.png");
+    background-size: cover;
+    background-position: center;
+    height: 293px;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    text-align: center;
+    justify-content: center;
+}
+
+.main-head {
+    grid-area: header;
+}
+
+.main-head h1 {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: 60px;
+}
+
+.main-head p {
+    margin-top: 0px;
+    font-size: 30px;
+}
+
+.main-nav a {
+    color: #87a08b;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.main-nav a:hover {
+    border-bottom: 1px solid #87a08b;
+}
+
+
+/* article */
+
+.content {
+    grid-area: content;
+    background: #ffffff;
+}
+
+.info-cards-wrapper {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.category-cards-wrapper {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.category-bg {
+    background-color: #95938333;
+}
+
+.spacer {
+    height: 20px;
+}
+
+
+/* footer */
+
+.main-footer {
+    grid-area: footer;
+    text-align: center;
+    margin-top: 12px;
+    background-color: #ced7cf;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.main-footer a {
+    padding: 10px;
+}
+
+.main-footer img {
+    width: 35px;
+    height: 35px;
+}
+
+
+/* ... */
+
+@media (min-width: 768px) {
+    .main-nav {
+        display: flex;
+        justify-content: center;
+    }
+    .nav-wrapper {
+        width: 768px;
+    }
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1024px) {
+    .info-cards-wrapper {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .category-cards-wrapper {
+        width: 1100px;
+        margin: 0 auto;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}

@@ -1,0 +1,27 @@
+.cat-card-image {
+    height: 200px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    text-align: center;
+    justify-content: center;
+}
+
+.cat-card-image-1 {
+    background: url("./assets/soap.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.cat-card-image-2 {
+    background: url("./assets/toothbrush.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.cat-card-image-3 {
+    background: url("./assets/garlick.jpg");
+    background-size: cover;
+    background-position: center;
+}

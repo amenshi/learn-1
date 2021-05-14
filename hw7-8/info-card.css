@@ -1,0 +1,34 @@
+.info-card {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "image" "text";
+    background: white;
+    text-align: center;
+    align-items: center;
+    width: 350px;
+}
+
+.info-card-image {
+    grid-area: image;
+}
+
+.info-card-image img {
+    width: 90px;
+    height: 90px;
+}
+
+.info-card-text {
+    grid-area: text;
+    margin: 7px;
+}
+
+.info-card-text p {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.info-card-text h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 28px;
+}
